@@ -1,0 +1,178 @@
+/*#region global*/
+@font-face {
+    font-family:'Roboto';
+    src: url('../font/Roboto-Light.ttf');
+}
+
+/*reset*/
+*{
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* setando unidades relativas */
+    /* rem */
+html{
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+/* em */
+body{
+    font-size: 16px;
+    /* overflow: hidden; */
+}
+
+/* setando as cores */
+:root{
+    --color-title: white;
+    --color-default: black;
+    --color-base: #11101d;
+    --color-bg: rgba(0, 0, 0, 0.411);
+}
+
+/* setando size */
+:root{
+    --text-title:2em;
+    --text-subtitle:1.2em;
+    --text-paragraph:1em;
+    --text-anchor:.8em;
+    --text-icon:2.5em;
+}
+
+h1{
+    font-size: var(--text-title);
+}
+ 
+h2{
+ 
+    font-size: var(--text-subtitle);
+}
+ 
+p{
+    font-size: var(--text-paragraph);
+}
+ 
+a{
+    font-size: var(--text-anchor);
+    transition: .5;
+}
+ 
+h1>span{
+    color: var(--color-tertiary);
+}
+ 
+section{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+ 
+:hover{
+    transition: .5s;
+}
+
+/*#endregion*/
+
+/*#region home*/
+#home{
+    background-image: url('../img/superHero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.homeContainer{
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 17em;
+    line-height: 2.5em;
+    background-color: var(--color-bg);
+}
+
+.homeContainer li h1{
+    color: var(--color-title);
+    font-size: var(--text-title);
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.homeContainer li p{
+    color: var(--color-title);
+}
+
+.homeContainer li input{
+    padding: .8em 1.2em;
+    border-radius: 6px;
+    border-color: var(--color-title);
+    color: var(--color-title);
+    background-color: var(--color-bg);
+    filter: brightness(70%);
+    transition: .5s;
+}
+
+.homeContainer li input:hover{
+    transform: scale(1.2);
+    filter: brightness(100%);
+    transition: .7s;
+    cursor: pointer;
+}
+/*#endregion*/
+
+
+/*#region Apps*/
+
+#info{
+    width: 100%;
+    height: 45vh;
+}
+
+.appsContainer{
+    background-color: var(--color-title);
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.appsContainer h1{
+    line-height: 3em;
+}
+
+.text{
+    width: auto;
+    padding: 0 15em;
+    display: flex;
+}
+
+.text li{
+    justify-content: space-around;
+    padding: 2em;
+    text-align: justify;
+    flex-basis: 90%;
+}
+/*#endregion*/
+
+/*#region Cards*/
+
+.cardContainer{
+    background-color: #11101d;
+    padding: 5em;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#card{
+
+}
+
+/*#endregion*/
