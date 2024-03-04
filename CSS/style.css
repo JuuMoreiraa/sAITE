@@ -162,17 +162,64 @@ section{
 
 /*#region Cards*/
 
-.cardContainer{
+#card{
+    width: 100%;
+    height: auto;
+    /* padding: 20px; */
+    padding: 40px 100px;
     background-color: #11101d;
-    padding: 5em;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    flex-direction: row;
 }
 
-#card{
+.cardContainer{ 
+    padding: 40px 100px;
+}
 
+.cardContainer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cardList{
+    background-color: var(--color-title);
+    text-align: center;
+    flex-basis: 25%;
+}
+
+.cardList img{
+    max-height: 130px;
+    width: 100%;
+}
+
+
+.cardList h2{
+    font-weight: bold;
+   line-height: 20px;
+   padding: 1em 0 0 0;
+}
+
+.cardList p{
+    color: var(--colorBase);
+    padding: 20px 15px;
+    border-bottom: solid 1px;
+}
+
+.cardList input{
+    margin: 1em;
+    padding: .5em;
+    background-color: var(--color-base);
+    border: none;
+    color: var(--color-title);
+    border-radius: 2px;
+}
+
+.cardList input:hover{
+    cursor: pointer;
+    transition: .5s;
+    background-color: var(--color-title);
+    color: var(--color-text);
+    border: solid 1px;
+    border-color: var(--color-base);
 }
 
 /*#endregion*/
