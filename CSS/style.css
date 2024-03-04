@@ -132,7 +132,7 @@
 /*#region Apps*/
     #info{
         width: 100%;
-        height: 45vh;
+        height: 25vh;
     }
 
     .appsContainer{
@@ -186,7 +186,7 @@
     }
 
     .cardList img{
-        max-height: 130px;
+        max-height: 230px;
         width: 100%;
     }
 
@@ -225,12 +225,12 @@
 /*#region Text*/
     #text{
         width: 100%;
-        height: 45vh;
+        height: 25vh;
     }
 
     .textContainer{
         background-color: var(--color-title);
-        padding: 3em 15em;
+        padding: 3em;
         text-align: center;
     }
 
@@ -247,7 +247,7 @@
 /*#region Contact/About*/
     .contactContainer{
         width: 100%;
-        height: 45vh;
+        height: 35vh;
     }
 
     .contactContainer ul{
@@ -259,8 +259,9 @@
 
     .contactUs{
         background-color: var(--color-contact);
-        padding: 4em;
+        padding: 6em;
         color: var(--color-title);
+        width: 100%;
     }
 
     .contactUs h2{
@@ -268,14 +269,15 @@
     }
 
     .contactUs p{
-        padding: 1em;
+        line-height: 2em;
         font-size: var(--text-anchor);
     }
 
     .aboutUs{
         background-color: var(--color-about);
-        padding: 4em;
+        padding: 6em;
         color: var(--color-title);
+        width: 100%;
     }
 
     .aboutUs h2{
@@ -283,7 +285,7 @@
     }
 
     .aboutUs p{
-        padding: 1em;
+        line-height: 2em;
         font-size: var(--text-anchor);
     }
 /*#endregion*/
@@ -295,7 +297,7 @@
         height: 8vh;
         color: var(--color-title);
         text-align: center;
-        padding: 1.5em;
+        padding: 2.5em;
         align-items: center;
         font-size: var(--text-anchor);
     }
